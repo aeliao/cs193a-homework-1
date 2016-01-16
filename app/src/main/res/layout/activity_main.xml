@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aeliao.assignmentone.MainActivity"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="the Memory Game"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Let&apos;s Play!"
+        android:id="@+id/playButton"
+        android:clickable="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="playButtonClick"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avocado"
+        android:src="@drawable/avocado"
+        android:onClick="avocadoClick"
+        android:clickable="false"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/blueberries"
+        android:layout_alignStart="@+id/blueberries"
+        android:background="#FFFFFF" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orange"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/orange"
+        android:layout_below="@+id/avocado"
+        android:layout_centerHorizontal="true"
+        android:onClick="orangeClick"
+        android:clickable="false"
+        android:background="#FFFFFF" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/apple"
+        android:src="@drawable/apple"
+        android:layout_alignTop="@+id/orange"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="appleClick"
+        android:clickable="false"
+        android:background="#FFFFFF" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blueberries"
+        android:src="@drawable/blueberries"
+        android:layout_below="@+id/apple"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:onClick="blueberriesClick"
+        android:background="#FFFFFF" />
+
+</RelativeLayout>
